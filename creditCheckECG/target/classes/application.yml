@@ -1,0 +1,20 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    DB_CLOSE_ON_EXIT: FALSE
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+logging:
+  level:
+    root: info
+
+upload-folder-location: ../creditCheckECG/Upload/
+
